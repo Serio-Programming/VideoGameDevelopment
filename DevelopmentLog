@@ -1,0 +1,19 @@
+2024 October 19th
+More work was done on the first enemy, the horrible gelatinous cube.
+When the player is in contact with the cube, a specific sound plays on loop and an acidic smoke comes off the player, to let them know something is happening.
+When the cube comes into contact with a harmless animal, it plays a random squishy sound and the animal explodes into a cloud of smoke.
+Random objects like skulls and hats float around in the cubes, to make them interesting. There are also random jelly things floating in them as well.
+The horrible cubes are semi-random in their color, spawning as either of a shade of green or a yellow.
+The cube sprites, being square with splotches in certain areas, are also randomly rotated at 90 degree increments before the cube is created.
+The rotation of the cubes gives them some different looks, so they all aren't always the same.
+The cubes expand and contract as they move, to make them more interesting.
+A video of the cube can be found here: https://www.youtube.com/watch?v=T_nQF6z40qQ
+
+2024 October 20th
+The magic object is now used as a parent object for all magical attacks, passing a magic damage value of 0, to be set for each specific spell.
+The enemy object was created as a parent object for the horrible gelatinous cube, as well as any future enemies.
+The cube has a health variable now, and when it takes too much damage, it disappears in a cloud of acidic smoke.
+The wizard staff hits do anywhere between 0 and 2 damage, so that the player doesn't rely on them too much.
+
+THINGS TO DO
+>Make sure to also flip horrible gelatinous cube sprites after rotating them, for more patterns.
