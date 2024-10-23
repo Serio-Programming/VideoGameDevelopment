@@ -1,4 +1,5 @@
-2024 October 19th
+----- JOURNAL -----
+- 2024 October 19th -
 More work was done on the first enemy, the horrible gelatinous cube.
 When the player is in contact with the cube, a specific sound plays on loop and an acidic smoke comes off the player, to let them know something is happening.
 When the cube comes into contact with a harmless animal, it plays a random squishy sound and the animal explodes into a cloud of smoke.
@@ -9,34 +10,62 @@ The rotation of the cubes gives them some different looks, so they all aren't al
 The cubes expand and contract as they move, to make them more interesting.
 A video of the cube can be found here: https://www.youtube.com/watch?v=T_nQF6z40qQ
 
-2024 October 20th
+- 2024 October 20th -
 The magic object is now used as a parent object for all magical attacks, passing a magic damage value of 0, to be set for each specific spell.
 The enemy object was created as a parent object for the horrible gelatinous cube, as well as any future enemies.
 The cube has a health variable now, and when it takes too much damage, it disappears in a cloud of acidic smoke.
 The wizard staff hits do anywhere between 0 and 2 damage, so that the player doesn't rely on them too much.
 
-THINGS TO DO
-Horrible Gelatinous Cube:
->When the cube is killed, have a more dramatic effect take place.
+----- THINGS TO DO -----
+Horrible Gelatinous Cube: 
+>When the cube is killed, have a more dramatic smoke/explosion effect take place.
 >When the cube is killed, play a sound randomly from a list of gelatinous cube death noises.
+>When the cube is dying, play a melting animation.
+>Make the object floating in the cube disintegrate most of the time, but sometimes get left behind when the cube dies.
+>Allow the player to interact with this object, and search it for items.
 >Make sure to also flip horrible gelatinous cube sprites after rotating them, for more patterns.
 >Create a horrible gelatinous cube spawning object, that creates horrible cubes depending on the number left and a time factor.
 >When the cubes spawn, have them grow slowly as if oozing onto the scene, and make sure to have a sound effect for this.
 
 Player:
 >Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
+>Create a player inventory that keeps track of all the items the player has.
+>Create a menu screen for the inventory to be displayed, and to allow the user to organize items.
+
 
 Dungeons:
 >Every environment/dungeon should have a difficulty modifier, that makes enemies stronger or weaker depending on the character level/area/other factors.
 
 Magic:
+>Create 20 spells.
+>Start the player with a "spell crumpled napkin" that contains a single, random, probably useless low-level spell.
+>Think about how to add a system that randomly generates spells, and assigns names based on characteristics.
+>Think about randomly choosing spell type, damage, size, movement characteristics, and combining damage types.
+>Think about how to add fire type magic and damage.
+>Think about how to add ice type magic and damage.
+>Think about how to add poison type magic and damage.
+>Think about how to add polymorph spells (turn player into harmless animals, turn enemies into harmless animals).
+
 
 Items:
+>Create wands that have a random number of charges, and that cast random, predetermined spells.
+>The structure of the spell should decide the name of the wand.
+>The wands should be rechargeable, by visiting a merchant or through some costly player method.
 
 NPCs:
+>
 
 Harmless Animals:
+>Create rats that skitter back and forth, and have them spawn in gross places and underground.
+>The rats should randomly play squeaking noises as they move around.
 
 Furniture:
+>Create chairs that the wizard can sit down in.
+>Create an orb object, and place it on a table next to a chair, and allow the player to ponder it and restore their mana.
+>Play music while the orb is being pondered.
+>Allow the player to stand up after pondering the orb for however long the wish.
+>Automatically save the game when the orb is pondered.
 
 Environment:
+
+----- THINGS DONE -----
