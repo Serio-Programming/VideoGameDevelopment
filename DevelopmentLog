@@ -44,6 +44,8 @@ Magic:
   - Create "Polymorph into Butterfly" spell that changes the player into a butterfly. After a puff of smoke, the player is a butterfly.
   - Create "Heal Booboo" spell that heals the player for a small amount of damage. After a yellowish/golden flash, the player glows a little and is healed.
   - Create "Become Barrel" spell, that changes the player into a barrel after a puff of smoke.
+  - Create "Ice Bolt" spell, this spell shoots a spike of ice that deals magic/ice damage, and slows the enemy.
+  - Create "Volatile Vapor" spell, this spell highlights the player in green and surrounds them by a mist of poison, that deals damage over time to enemies.
 >Start the player with a "spell crumpled napkin" that contains a single, random, probably useless low-level spell.
 >Think about how to add a system that randomly generates spells, and assigns names based on characteristics.
 >Think about randomly choosing spell type, damage, size, movement characteristics, and combining damage types.
