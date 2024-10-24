@@ -59,9 +59,14 @@ Items:
 >Create wands that have a random number of charges, and that cast random, predetermined spells.
 >The structure of the spell should decide the name of the wand.
 >The wands should be rechargeable, by visiting a merchant or through some costly player method.
+>Create rings, necklaces, belts, socks, that can equipped by the player.
+>Allow for the enchantment of items, so that if they are equipped or carried, they give bonuses to the player.
+>Make enchantments very rare and costly.
+>Allow for the player to enchant their hats, robes, and staffs.
+>Allow for the disenchanting of item, also make it very expensive. More expensive to remove specific effects while leaving others.
 
 NPCs:
->
+>Make a wandering band of dwarf traders on a wagon. They can be interacted with, and items purchased from them. Food for healing, alcohol for mana.
 
 Harmless Animals:
 >Create rats that skitter back and forth, and have them spawn in gross places and underground.
