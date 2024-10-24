@@ -35,12 +35,15 @@ Player:
 
 Dungeons:
 >Every environment/dungeon should have a difficulty modifier, that makes enemies stronger or weaker depending on the character level/area/other factors.
+>Each dungeon must be procedurally and randomly generated. The length of the dungeon is randomly decided beforehand.
+>After the player completes a dungeon, like a cave system, the player returns to the outside of the dungeon. The entrance will now take them to a new randomly generated dungeon.
+
 
 Magic:
 >Create 20 spells.
->Start the player with a "spell crumpled napkin" that contains a single, random, probably useless low-level spell.
->Think about how to add a system that randomly generates spells, and assigns names based on characteristics.
->Think about randomly choosing spell type, damage, size, movement characteristics, and combining damage types.
+  - Create "Polymorph into Butterfly" spell that changes the player into a butterfly. After a puff of smoke, the player is a butterfly.
+  - Create "Heal Booboo" spell that heals the player for a small amount of damage. After a yellowish/golden flash, the player glows a little and is healed.
+  - Create "Become Barrel" spell, that changes the player into a barrel after a puff of smoke.
 >Think about how to add fire type magic and damage.
 >Think about how to add ice type magic and damage.
 >Think about how to add poison type magic and damage.
@@ -65,6 +68,7 @@ Furniture:
 >Play music while the orb is being pondered.
 >Allow the player to stand up after pondering the orb for however long the wish.
 >Automatically save the game when the orb is pondered.
+>Create wooden barrels that can be searched. If a significant amount of damage is applied, have them shatter.
 
 Environment:
 
