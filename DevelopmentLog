@@ -16,7 +16,11 @@ The enemy object was created as a parent object for the horrible gelatinous cube
 The cube has a health variable now, and when it takes too much damage, it disappears in a cloud of acidic smoke.
 The wizard staff hits do anywhere between 0 and 2 damage, so that the player doesn't rely on them too much.
 
+- 2024 October 25th -
+Have been spending past few days brainstorming things to be added to the game.
+
 ----- THINGS TO DO -----
+- ENEMIES -
 Horrible Gelatinous Cube: 
 >When the cube is killed, have a more dramatic smoke/explosion effect take place.
 >When the cube is killed, play a sound randomly from a list of gelatinous cube death noises.
@@ -27,24 +31,31 @@ Horrible Gelatinous Cube:
 >Create a horrible gelatinous cube spawning object, that creates horrible cubes depending on the number left and a time factor.
 >When the cubes spawn, have them grow slowly as if oozing onto the scene, and make sure to have a sound effect for this.
 
-Player:
+Fat Ugly Rat:
+>Add a random and rare version of the Fat Ugly Rat called the Fat Adorable Rat, that is less ugly but still evil, because it is funny.
+
+- PLAYER -
 >Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
 >Create a player inventory that keeps track of all the items the player has.
 >Create a menu screen for the inventory to be displayed, and to allow the user to organize items.
+Health:
+Mana:
+Endurance:
+Defense:
+Inventory:
 
 
-Dungeons:
+- DUNGEONS -
 >Every environment/dungeon should have a difficulty modifier, that makes enemies stronger or weaker depending on the character level/area/other factors.
 >Each dungeon must be procedurally and randomly generated. The length of the dungeon is randomly decided beforehand.
 >After the player completes a dungeon, like a cave system, the player returns to the outside of the dungeon. The entrance will now take them to a new randomly generated dungeon.
 
-
-Magic:
+- MAGIC -
 >Create 20 spells.
   - Create "Polymorph into Butterfly" spell that changes the player into a butterfly. After a puff of smoke, the player is a butterfly.
   - Create "Heal Booboo" spell that heals the player for a small amount of damage. After a yellowish/golden flash, the player glows a little and is healed.
   - Create "Become Barrel" spell, that changes the player into a barrel after a puff of smoke.
-  - Create "Ice Bolt" spell, this spell shoots a spike of ice that deals magic/ice damage, and slows the enemy.
+  - Create "Ice Shard" spell, this spell shoots a spike of ice that deals magic/ice damage, and slows the enemy.
   - Create "Volatile Vapor" spell, this spell highlights the player in green and surrounds them by a mist of poison, that deals damage over time to enemies.
 >Start the player with a "spell crumpled napkin" that contains a single, random, probably useless low-level spell.
 >Think about how to add a system that randomly generates spells, and assigns names based on characteristics.
@@ -53,9 +64,10 @@ Magic:
 >Think about how to add ice type magic and damage.
 >Think about how to add poison type magic and damage.
 >Think about how to add polymorph spells (turn player into harmless animals, turn enemies into harmless animals).
+>Think about how to add healing type magic and anti-damage.
+>Think about spell targets. Self. Enemy. Aura. Area. Object. Projectile. Touch. Etc.
 
-
-Items:
+- ITEMS -
 >Create wands that have a random number of charges, and that cast random, predetermined spells.
 >The structure of the spell should decide the name of the wand.
 >The wands should be rechargeable, by visiting a merchant or through some costly player method.
@@ -65,14 +77,20 @@ Items:
 >Allow for the player to enchant their hats, robes, and staffs.
 >Allow for the disenchanting of item, also make it very expensive. More expensive to remove specific effects while leaving others.
 
-NPCs:
+Wand of Wolf:
+>Create a wand that the character can pick, make it look wolf related.
+>The Wand of Wolf shoots a wolf in the direction that the character is pointing. The wolf charges forward, accompanied by barking.
+>When the wolf comes into contact with an enemy or wall, it explodes into a shroud of chaotic smoke, dealing damage and with lots of barking, and then dealing area damage for a short amount of time.
+>Make it so that randomly and rarely, the Wand of Wolf fires a chihuahua, because it is funny.
+
+- NPCs -
 >Make a wandering band of dwarf traders on a wagon. They can be interacted with, and items purchased from them. Food for healing, alcohol for mana.
 
-Harmless Animals:
+- HARMLESS ANIMALS -
 >Create rats that skitter back and forth, and have them spawn in gross places and underground.
 >The rats should randomly play squeaking noises as they move around.
 
-Furniture:
+- FURNITURE -
 >Create chairs that the wizard can sit down in.
 >Create an orb object, and place it on a table next to a chair, and allow the player to ponder it and restore their mana.
 >Play music while the orb is being pondered.
