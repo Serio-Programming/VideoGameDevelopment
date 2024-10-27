@@ -19,12 +19,24 @@ The wizard staff hits do anywhere between 0 and 2 damage, so that the player doe
 - 2024 October 25th -
 Have been spending past few days brainstorming things to be added to the game.
 
+- 2024 October 27 - 
+Worked on game today and yesterday.
+The wizard can now kill a horrible gelatinous cube, complete with splattery sound effects.
+A video can be found here: https://www.youtube.com/watch?v=iJvEMA-lE7s&ab_channel=ForeignIntelligenceAlliance
+Discovered that different instances of the cube all play the same sounds, which interferes with how the sounds are supposed to be played.
+There is no problem when a single cube exists, but when multiple exists, the only cube that plays any sounds was the one most recently spawned.
+Will need to use audio emitters in order to get the desired effect.
+The cubes now also drop whatever item they were carrying in them onto the ground. Text of the item floats above it when it lands. The item slowly fades away.
+Once the alpha is zero, the item will disappear. The text will disappear as well. 
+
 ----- THINGS TO DO -----
 - ENEMIES -
 Horrible Gelatinous Cube: 
->When the cube is killed, have a more dramatic smoke/explosion effect take place.
->When the cube is killed, play a sound randomly from a list of gelatinous cube death noises.
->When the cube is dying, play a melting animation.
+>Add just a little more splattery-ness when the cube dies. 
+>Start using audio emitters so that when the player is next to a cube, it always plays the "gel walking" sound proportional to the distance from the player. 
+>Use audio emitters for when the cube dies as well, or else the player will hear the death sound even if the cube is far away. 
+>Use audio emitters for the sound of the player being eaten by the cube. 
+>Remember to use audio emitters or else only one instance of an object will play the sounds that it is supposed to.
 >Make the object floating in the cube disintegrate most of the time, but sometimes get left behind when the cube dies.
 >Allow the player to interact with this object, and search it for items.
 >Make sure to also flip horrible gelatinous cube sprites after rotating them, for more patterns.
@@ -101,3 +113,8 @@ Wand of Wolf:
 Environment:
 
 ----- THINGS DONE -----
+- ENEMIES -
+Horrible Gelatinous Cube: 
+>Done. When the cube is killed, have a more dramatic smoke/explosion effect take place.
+>Done. When the cube is killed, play a sound randomly from a list of gelatinous cube death noises.
+>Done. When the cube is dying, play a melting animation. Decided instead on having splattery objects created when the cube dies.
