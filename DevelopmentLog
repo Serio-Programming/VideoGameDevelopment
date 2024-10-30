@@ -32,6 +32,7 @@ Once the alpha is zero, the item will disappear. The text will disappear as well
 ----- THINGS TO DO -----
 - ENEMIES -
 Horrible Gelatinous Cube: 
+>When the wizard is inside the cube, slow all movement (walking, falling, jumping) to make it harder to escape the horrible cube.
 >Add just a little more splattery-ness when the cube dies. 
 >Start using audio emitters so that when the player is next to a cube, it always plays the "gel walking" sound proportional to the distance from the player. 
 >Use audio emitters for when the cube dies as well, or else the player will hear the death sound even if the cube is far away. 
@@ -44,7 +45,30 @@ Horrible Gelatinous Cube:
 >When the cubes spawn, have them grow slowly as if oozing onto the scene, and make sure to have a sound effect for this.
 
 Fat Ugly Rat:
+>Make the rats randomly vary in color from black, to brown, to white.
+>Make some of the rats have random splotches/spots of color on them. 
+>Collect at least 5 sounds to randomly play when the rat attacks the player.
+>Collect at least 5 sounds to randomly play while the rat wanders around.
+>Collect at least 5 sounds to randomly play when the rats die.
+>Create a sound emitter that follows the rat and plays these sounds. 
+>Create an attack for the rat where it leaps forward, dealing damage and pushing the player backwards.
+>Create an attack for the rat where it bites at the player, dealing higher damage and pushing the player backwards.
+>Create an attack for the rat where it swipes twice at the player with its claws, dealing lesser damage with no pushing.
+>Create a very rare attack where the rat stands up, pulls out a knife, and stabs the player, dealing moderate damage and pushback, because it is funny.
 >Add a random and rare version of the Fat Ugly Rat called the Fat Adorable Rat, that is less ugly but still evil, because it is funny.
+
+Lumbering Fish Thing:
+
+Dreadful Amphibian: 
+
+Alligator: 
+
+Verminous Kobold:
+
+Evil Shadow:
+
+Mimic (Barrel):
+>Have different quality scores for the mimic, randomly chosen (Cheaply Made Knockoff, High-Quality Imitation, etc.).
 
 - PLAYER -
 >Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
@@ -55,6 +79,8 @@ Mana:
 Endurance:
 Defense:
 Inventory:
+Speed:
+Jump:
 
 
 - DUNGEONS -
@@ -96,6 +122,10 @@ Wand of Wolf:
 >Make it so that randomly and rarely, the Wand of Wolf fires a chihuahua, because it is funny.
 
 - NPCs -
+Unpaid Intern:
+>Create an unpaid intern character, a sort of invincible faux-enemy that the player can test magical attacks on.
+
+Dorfen Traders:
 >Make a wandering band of dwarf traders on a wagon. They can be interacted with, and items purchased from them. Food for healing, alcohol for mana.
 
 - HARMLESS ANIMALS -
@@ -115,6 +145,6 @@ Environment:
 ----- THINGS DONE -----
 - ENEMIES -
 Horrible Gelatinous Cube: 
->Done. When the cube is killed, have a more dramatic smoke/explosion effect take place.
->Done. When the cube is killed, play a sound randomly from a list of gelatinous cube death noises.
->Done. When the cube is dying, play a melting animation. Decided instead on having splattery objects created when the cube dies.
+>Done 2024 October 27th. When the cube is killed, have a more dramatic smoke/explosion effect take place. (Added more smoke to cube death. Plan to add more effects.)
+>Done 2024 October 27th. When the cube is killed, play a sound randomly from a list of gelatinous cube death noises. (Will probably add a few more death noises to the list of noises to choose from.)
+>Done 2024 October 27th. When the cube is dying, play a melting animation. (Decided instead on having splattery objects created when the cube dies.)
