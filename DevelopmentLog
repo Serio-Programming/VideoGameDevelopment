@@ -70,6 +70,10 @@ Evil Shadow:
 Mimic (Barrel):
 >Have different quality scores for the mimic, randomly chosen (Cheaply Made Knockoff, High-Quality Imitation, etc.).
 
+Glowing-Eyed Disease Horror:
+
+Deadly Moldy Funk:
+
 - PLAYER -
 >Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
 >Create a player inventory that keeps track of all the items the player has.
@@ -87,6 +91,24 @@ Jump:
 >Every environment/dungeon should have a difficulty modifier, that makes enemies stronger or weaker depending on the character level/area/other factors.
 >Each dungeon must be procedurally and randomly generated. The length of the dungeon is randomly decided beforehand.
 >After the player completes a dungeon, like a cave system, the player returns to the outside of the dungeon. The entrance will now take them to a new randomly generated dungeon.
+
+Sewer:
+>Make a gross procedurally generated sewer environment.
+>Make yellowish grimey walls.
+>
+>Make random drips and oozes.
+>Choose at least 7 random drip noises.
+>Choose at least 7 random flowing water noises.
+>Randomly spawn some enemies.
+>Create random spawn point for the Horrible Gelatinous Cube.
+>Create random spawn point for the Fat Ugly Rat.
+>Create random spawn point for the Lumbering Fish Thing.
+>Create random spawn point for the Dreadful Amphibian.
+>Create random spawn point for the Alligator.
+  - A flowing giant sewer pipe is where the Alligator spawns from. Sometimes immediately attacking, flying out and dealing damage, usually not (short delay before aggression towards player).
+>Create random spawn point for the Verminous Kobold.
+>Create random spawn point for the Evil Shadow.
+>Create random spawn point for the Mimic (Barrel).
 
 - MAGIC -
 >Create 20 spells.
@@ -139,6 +161,7 @@ Dorfen Traders:
 >Allow the player to stand up after pondering the orb for however long the wish.
 >Automatically save the game when the orb is pondered.
 >Create wooden barrels that can be searched. If a significant amount of damage is applied, have them shatter.
+>Create gross wooden barrels to be placed in sewer/dank environments. Sometimes has items, is cover for mimics.
 
 Environment:
 
