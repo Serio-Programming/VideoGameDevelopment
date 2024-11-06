@@ -29,63 +29,166 @@ Will need to use audio emitters in order to get the desired effect.
 The cubes now also drop whatever item they were carrying in them onto the ground. Text of the item floats above it when it lands. The item slowly fades away.
 Once the alpha is zero, the item will disappear. The text will disappear as well. 
 
+- 2024 November 6 -
+Worked on game last weekend, and some earlier this week. 
+Horrible gelatinous cubes now have audio emitters that follow them, playing weird noises.
+This allows for the falling off or gaining of volume as the monsters get closer or farther from the player.
+Each horrible gelatinous cube now also has their own sounds stored in variables.
+This avoids the issue of each instance of a cube trying to play the same sound asset, which interferes with representation to the player.
+A video demonstration of the audio emitters in action can be found here: https://www.youtube.com/watch?v=Z54H7TuQ3tM
+Cubes now have more splatterly death effects, which slowly dissolve away.
+
 ----- THINGS TO DO -----
 - ENEMIES -
-Horrible Gelatinous Cube: 
->When the wizard is inside the cube, slow all movement (walking, falling, jumping) to make it harder to escape the horrible cube.
->Add just a little more splattery-ness when the cube dies. 
->Start using audio emitters so that when the player is next to a cube, it always plays the "gel walking" sound proportional to the distance from the player. 
->Use audio emitters for when the cube dies as well, or else the player will hear the death sound even if the cube is far away. 
->Use audio emitters for the sound of the player being eaten by the cube. 
->Remember to use audio emitters or else only one instance of an object will play the sounds that it is supposed to.
->Make the object floating in the cube disintegrate most of the time, but sometimes get left behind when the cube dies.
->Allow the player to interact with this object, and search it for items.
->Make sure to also flip horrible gelatinous cube sprites after rotating them, for more patterns.
->Create a horrible gelatinous cube spawning object, that creates horrible cubes depending on the number left and a time factor.
->When the cubes spawn, have them grow slowly as if oozing onto the scene, and make sure to have a sound effect for this.
+*Horrible Gelatinous Cube: 
+  Sprite:
+    >Make sure to also flip horrible gelatinous cube sprites after rotating them, for more patterns.
 
-Fat Ugly Rat:
->Make the rats randomly vary in color from black, to brown, to white.
->Make some of the rats have random splotches/spots of color on them. 
->Collect at least 5 sounds to randomly play when the rat attacks the player.
->Collect at least 5 sounds to randomly play while the rat wanders around.
->Collect at least 5 sounds to randomly play when the rats die.
->Create a sound emitter that follows the rat and plays these sounds. 
->Create an attack for the rat where it leaps forward, dealing damage and pushing the player backwards.
->Create an attack for the rat where it bites at the player, dealing higher damage and pushing the player backwards.
->Create an attack for the rat where it swipes twice at the player with its claws, dealing lesser damage with no pushing.
->Create a very rare attack where the rat stands up, pulls out a knife, and stabs the player, dealing moderate damage and pushback, because it is funny.
->Add a random and rare version of the Fat Ugly Rat called the Fat Adorable Rat, that is less ugly but still evil, because it is funny.
+  Characteristics:
+    >Give the cube a moderate to high level of health. It is a damage sponge and should be able to tank a lot.
 
-Lumbering Fish Thing:
+  Movement/Animation/Effects:
 
-Dreadful Amphibian: 
+  Falling:
 
-Alligator: 
+  Attack/Animation/Effects:
+    >When the wizard is inside the cube, slow all movement (walking, falling, jumping) to make it harder to escape the horrible cube.
 
-Verminous Kobold:
+  Death/Animation/Effects:
+    >Done 2024 October 27th. When the cube is killed, have a more dramatic smoke/explosion effect take place. (Added more smoke to cube death. Plan to add more effects.)
+    >Done 2024 October 27th. When the cube is killed, play a sound randomly from a list of gelatinous cube death noises. (Will probably add a few more death noises to the list of noises to choose from.)
+    >Done 2024 October 27th. When the cube is dying, play a melting animation. (Decided instead on having splattery objects created when the cube dies.)
+    >Done 2024 November. Add just a little more splattery-ness when the cube dies. 
 
-Evil Shadow:
+  Drops:
+    >Make the object floating in the cube disintegrate most of the time, but sometimes get left behind when the cube dies.
+    >Allow the player to interact with this object, and search it for items.
+  
+  Sound:
+    >Use audio emitters for when the cube dies as well, or else the player will hear the death sound even if the cube is far away. 
+    >Use audio emitters for the sound of the player being eaten by the cube.
+    >Done 2024 November. Start using audio emitters so that when the player is next to a cube, it always plays the "gel walking" sound proportional to the distance from the player. 
+    >Done 2024 November. Remember to use audio emitters or else only one instance of an object will play the sounds that it is supposed to.
+  
+  Spawn:
+    >Create a horrible gelatinous cube spawning object, that creates horrible cubes depending on the number left and a time factor.
+    >When the cubes spawn, have them grow slowly as if oozing onto the scene, and make sure to have a sound effect for this.
+    >Create a random rusty sewer pipe that slowly oozes out a tiny cube that grows into the monster.
 
-Mimic (Barrel):
+*Fat Ugly Rat:
+  Sprite:
+    >Make the rats randomly vary in color from black, to brown, to white.
+    >Make some of the rats have random splotches/spots of color on them. 
+    >Add a random and rare version of the Fat Ugly Rat called the Fat Adorable Rat, that is less ugly but still evil, because it is funny.
+  
+  Movement/Animation/Effects:
+
+  Falling:
+  
+  Attack/Animation/Effects:
+    >Create an attack for the rat where it leaps forward, dealing damage and pushing the player backwards.
+    >Create an attack for the rat where it bites at the player, dealing higher damage and pushing the player backwards.
+    >Create an attack for the rat where it swipes twice at the player with its claws, dealing lesser damage with no pushing.
+    >Create a very rare attack where the rat stands up, pulls out a knife, and stabs the player, dealing moderate damage and pushback, because it is funny.
+ 
+  Death/Animation/Effects:
+    
+  Sound: 
+    >Create a sound emitter that follows the rat and plays these sounds.
+    >Collect at least 5 sounds to randomly play when the rat attacks the player with scratches.
+    >Collect at least 5 sounds to randomly play when the rat attacks the player with a bite.
+    >Collect at least 5 sounds to randomly play while the rat wanders around.
+    >Collect at least 5 sounds to randomly play when the rats die.
+
+  Spawn:
+
+*Lumbering Fish Thing:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
+
+*Dreadful Amphibian:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn: 
+
+*Alligator:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn: 
+
+*Verminous Kobold:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
+
+*Evil Shadow:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
+
+*Mimic (Barrel):
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
 >Have different quality scores for the mimic, randomly chosen (Cheaply Made Knockoff, High-Quality Imitation, etc.).
 
-Glowing-Eyed Disease Horror:
+*Glowing-Eyed Disease Horror:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Falling: 
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
 
-Deadly Moldy Funk:
-
-- PLAYER -
->Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
->Create a player inventory that keeps track of all the items the player has.
->Create a menu screen for the inventory to be displayed, and to allow the user to organize items.
-Health:
-Mana:
-Endurance:
-Defense:
-Inventory:
-Speed:
-Jump:
-
+*Deadly Moldy Funk:
+  Sprite:
+  Characteristics:
+  Movement/Animation/Effects:
+  Attack/Animation/Effects:
+  Death/Animation/Effects:
+  Drops:
+  Sound:
+  Spawn:
 
 - DUNGEONS -
 >Every environment/dungeon should have a difficulty modifier, that makes enemies stronger or weaker depending on the character level/area/other factors.
@@ -109,6 +212,19 @@ Sewer:
 >Create random spawn point for the Verminous Kobold.
 >Create random spawn point for the Evil Shadow.
 >Create random spawn point for the Mimic (Barrel).
+  Sounds:
+
+- PLAYER -
+>Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
+>Create a player inventory that keeps track of all the items the player has.
+>Create a menu screen for the inventory to be displayed, and to allow the user to organize items.
+Health:
+Mana:
+Endurance:
+Defense:
+Inventory:
+Speed:
+Jump:
 
 - MAGIC -
 >Create 20 spells.
@@ -163,11 +279,4 @@ Dorfen Traders:
 >Create wooden barrels that can be searched. If a significant amount of damage is applied, have them shatter.
 >Create gross wooden barrels to be placed in sewer/dank environments. Sometimes has items, is cover for mimics.
 
-Environment:
-
------ THINGS DONE -----
-- ENEMIES -
-Horrible Gelatinous Cube: 
->Done 2024 October 27th. When the cube is killed, have a more dramatic smoke/explosion effect take place. (Added more smoke to cube death. Plan to add more effects.)
->Done 2024 October 27th. When the cube is killed, play a sound randomly from a list of gelatinous cube death noises. (Will probably add a few more death noises to the list of noises to choose from.)
->Done 2024 October 27th. When the cube is dying, play a melting animation. (Decided instead on having splattery objects created when the cube dies.)
+Environments:
