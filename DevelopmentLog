@@ -38,6 +38,13 @@ This avoids the issue of each instance of a cube trying to play the same sound a
 A video demonstration of the audio emitters in action can be found here: https://www.youtube.com/watch?v=Z54H7TuQ3tM
 Cubes now have more splatterly death effects, which slowly dissolve away.
 
+- 2024 November 12 -
+Worked on game last weekend and Veterans Day.
+Continued working on sound emitters. Discovered an issue where sounds come from left and right, and can be silent depending on whether or not the sound is coming from the left or right of the Wizard.
+This issue was fixed by orienting the GameMaker listener to "look" or "face" along the x-axis, so that both "ears" are positioned the same distance away from whatever is making a noise.
+This allows the player to hear sounds falloff equally from the left and right earphones, depending only on the distance of the sound emitter from the player without regards to which ear is closer.
+Left vs right hearing might work better in different kinds of games, but this one will not focus on that.
+
 ----- THINGS TO DO -----
 - ENEMIES -
 *Horrible Gelatinous Cube: 
@@ -218,13 +225,33 @@ Sewer:
 >Add an inheritable player object that includes heatlh, mana, endurance, defense, and other important characteristics.
 >Create a player inventory that keeps track of all the items the player has.
 >Create a menu screen for the inventory to be displayed, and to allow the user to organize items.
-Health:
-Mana:
-Endurance:
-Defense:
-Inventory:
-Speed:
-Jump:
+
+  *Variables:
+    Health:
+      >Create a total health variable for the player, an amount of health that cannot be crossed over.
+      >Create a current health variable for the player, so that it can be increased or decreased. If it goes below zero, the player dies. If it goes above the total health variable, it is reduced to it. 
+
+    Mana:
+      >Create a total mana variable for the player. This is highest amount of mana the player can have.
+      >Create a current mana variable for the player. If the mana variable is reduced to zero, the player cannot cast spells. If it is above the total mana variable, it is reduced to that variable's value.
+
+    Endurance:
+      >
+
+    Defense:
+      >
+
+    Inventory:
+      >Create a variable, a list if available, to hold the player's current items.
+      >
+
+    Speed:
+      >
+
+    Jump:
+      >Create a variable to hold the player's jump acceleration
+      >Create a variable to hold the player's y-axis subtraction when Jumping.
+      >The player should have variables that control both jump acceleration and raw y-axis subraction. This will allow other objects, like the gelatinous cube, to affect how the player moves.
 
 - MAGIC -
 >Create 20 spells.
