@@ -45,6 +45,10 @@ This issue was fixed by orienting the GameMaker listener to "look" or "face" alo
 This allows the player to hear sounds falloff equally from the left and right earphones, depending only on the distance of the sound emitter from the player without regards to which ear is closer.
 Left vs right hearing might work better in different kinds of games, but this one will not focus on that.
 
+- 2024 December 7 -
+Terrible news, Windows 10 has finally killed my vintage 2009 motherboard. I will need to repair it or get a new computer.
+I could continue my work on my laptop, but official business requires a larger, more official computer.
+
 ----- THINGS TO DO -----
 - ENEMIES -
 *Horrible Gelatinous Cube: 
